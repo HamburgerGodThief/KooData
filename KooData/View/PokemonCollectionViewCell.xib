@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCollectionViewCell" id="gTV-IL-0wX" customClass="PokemonCollectionViewCell" customModule="KooData" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-VR-JwF">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="266"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IER-JC-10n">
+                        <rect key="frame" x="0.0" y="186" width="409" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-gQ-6dE">
+                                <rect key="frame" x="28" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orA-t2-hLF">
+                                <rect key="frame" x="28" y="29" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gqv-gQ-6dE" firstAttribute="top" secondItem="IER-JC-10n" secondAttribute="top" constant="8" id="TAf-OW-ay6"/>
+                            <constraint firstItem="orA-t2-hLF" firstAttribute="top" secondItem="gqv-gQ-6dE" secondAttribute="bottom" id="XrK-pQ-tZh"/>
+                            <constraint firstItem="gqv-gQ-6dE" firstAttribute="leading" secondItem="IER-JC-10n" secondAttribute="leading" constant="28" id="mHy-Jm-jq3"/>
+                            <constraint firstItem="orA-t2-hLF" firstAttribute="leading" secondItem="IER-JC-10n" secondAttribute="leading" constant="28" id="s6O-bv-0iM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IER-JC-10n" secondAttribute="trailing" id="6J9-rx-c67"/>
+                <constraint firstAttribute="bottom" secondItem="IER-JC-10n" secondAttribute="bottom" id="AOh-7P-MO0"/>
+                <constraint firstItem="IER-JC-10n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KAO-Bv-2Qn"/>
+                <constraint firstAttribute="bottom" secondItem="l5Q-VR-JwF" secondAttribute="bottom" id="Nen-lV-Eui"/>
+                <constraint firstItem="IER-JC-10n" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.3" id="Shj-NZ-gbc"/>
+                <constraint firstItem="l5Q-VR-JwF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hgS-un-jdz"/>
+                <constraint firstItem="l5Q-VR-JwF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tzO-4S-pwK"/>
+                <constraint firstAttribute="trailing" secondItem="l5Q-VR-JwF" secondAttribute="trailing" id="uzV-T2-rjA"/>
+            </constraints>
+            <size key="customSize" width="409" height="266"/>
+            <connections>
+                <outlet property="barView" destination="IER-JC-10n" id="ghJ-XW-hn3"/>
+                <outlet property="numberNameLbl" destination="gqv-gQ-6dE" id="8T0-C1-v4r"/>
+                <outlet property="pokemonImg" destination="l5Q-VR-JwF" id="6ng-bG-o5h"/>
+                <outlet property="typeLbl" destination="orA-t2-hLF" id="XR4-o6-pTN"/>
+            </connections>
+            <point key="canvasLocation" x="392.02898550724643" y="206.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
