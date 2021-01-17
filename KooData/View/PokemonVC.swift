@@ -76,7 +76,9 @@ extension PokemonVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
                 
         guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonCollectionViewCell", for: indexPath) as? PokemonCollectionViewCell else { return UICollectionViewCell() }
         
-        item.numberNameLbl.text = "\(pokemons[indexPath.row].number) － \(pokemons[indexPath.row].name)"
+        item.numberNameLbl.text = "\(String(describing: pokemons[indexPath.row].number)) － \(String(describing: pokemons[indexPath.row].name))"
+        
+        item.pokemonImg.loadImage(pokemons[indexPath.row].image)
                                 
         return item
                     

@@ -19,18 +19,13 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-VR-JwF">
                         <rect key="frame" x="0.0" y="0.0" width="409" height="266"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IER-JC-10n">
                         <rect key="frame" x="0.0" y="186" width="409" height="80"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-gQ-6dE">
-                                <rect key="frame" x="28" y="8" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orA-t2-hLF">
-                                <rect key="frame" x="28" y="29" width="42" height="21"/>
+                                <rect key="frame" x="28" y="29.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,15 +33,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gqv-gQ-6dE" firstAttribute="top" secondItem="IER-JC-10n" secondAttribute="top" constant="8" id="TAf-OW-ay6"/>
-                            <constraint firstItem="orA-t2-hLF" firstAttribute="top" secondItem="gqv-gQ-6dE" secondAttribute="bottom" id="XrK-pQ-tZh"/>
+                            <constraint firstItem="gqv-gQ-6dE" firstAttribute="centerY" secondItem="IER-JC-10n" secondAttribute="centerY" id="gxH-hK-pgB"/>
                             <constraint firstItem="gqv-gQ-6dE" firstAttribute="leading" secondItem="IER-JC-10n" secondAttribute="leading" constant="28" id="mHy-Jm-jq3"/>
-                            <constraint firstItem="orA-t2-hLF" firstAttribute="leading" secondItem="IER-JC-10n" secondAttribute="leading" constant="28" id="s6O-bv-0iM"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="IER-JC-10n" secondAttribute="trailing" id="6J9-rx-c67"/>
                 <constraint firstAttribute="bottom" secondItem="IER-JC-10n" secondAttribute="bottom" id="AOh-7P-MO0"/>
@@ -62,7 +56,6 @@
                 <outlet property="barView" destination="IER-JC-10n" id="ghJ-XW-hn3"/>
                 <outlet property="numberNameLbl" destination="gqv-gQ-6dE" id="8T0-C1-v4r"/>
                 <outlet property="pokemonImg" destination="l5Q-VR-JwF" id="6ng-bG-o5h"/>
-                <outlet property="typeLbl" destination="orA-t2-hLF" id="XR4-o6-pTN"/>
             </connections>
             <point key="canvasLocation" x="392.02898550724643" y="206.25"/>
         </collectionViewCell>

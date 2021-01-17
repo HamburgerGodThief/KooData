@@ -12,6 +12,7 @@
 		6419CEE925B407F70069ED29 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEE825B407F70069ED29 /* Apollo.swift */; };
 		6419CEEC25B415440069ED29 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEEB25B415440069ED29 /* CellViewModel.swift */; };
 		6419CEEF25B41C7E0069ED29 /* PokemonVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEEE25B41C7E0069ED29 /* PokemonVCViewModel.swift */; };
+		6419CF1A25B495C50069ED29 /* KingfisherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CF1925B495C50069ED29 /* KingfisherWrapper.swift */; };
 		645D884C25B1703D00926C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884B25B1703D00926C16 /* AppDelegate.swift */; };
 		645D885025B1703D00926C16 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884F25B1703D00926C16 /* PokemonVC.swift */; };
 		645D885325B1703D00926C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D885125B1703D00926C16 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		6419CEE825B407F70069ED29 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		6419CEEB25B415440069ED29 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		6419CEEE25B41C7E0069ED29 /* PokemonVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVCViewModel.swift; sourceTree = "<group>"; };
+		6419CF1925B495C50069ED29 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
 		645D884825B1703D00926C16 /* KooData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KooData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D884B25B1703D00926C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645D884F25B1703D00926C16 /* PokemonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				645D886625B1735F00926C16 /* UICollectionView+Extension.swift */,
+				6419CF1925B495C50069ED29 /* KingfisherWrapper.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				645D885025B1703D00926C16 /* PokemonVC.swift in Sources */,
+				6419CF1A25B495C50069ED29 /* KingfisherWrapper.swift in Sources */,
 				645D886725B1735F00926C16 /* UICollectionView+Extension.swift in Sources */,
 				6419CEEC25B415440069ED29 /* CellViewModel.swift in Sources */,
 				645D887325B19D9800926C16 /* HTTPClient.swift in Sources */,

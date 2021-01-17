@@ -7,5 +7,6 @@ target 'KooData' do
 
   # Pods for KooData
   pod 'Apollo'
+  pod 'Kingfisher', '~> 5.0'
 
 end

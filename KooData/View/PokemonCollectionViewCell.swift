@@ -9,15 +9,7 @@ import UIKit
 
 class PokemonCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var pokemonImg: UIImageView! {
-        
-        didSet {
-            
-            pokemonImg.backgroundColor = .yellow
-            
-        }
-        
-    }
+    @IBOutlet weak var pokemonImg: UIImageView!
     
     @IBOutlet weak var barView: UIView! {
         
