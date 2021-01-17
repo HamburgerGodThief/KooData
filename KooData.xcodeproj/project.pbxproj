@@ -21,7 +21,7 @@
 		645D886725B1735F00926C16 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D886625B1735F00926C16 /* UICollectionView+Extension.swift */; };
 		645D886F25B1743700926C16 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D886D25B1743700926C16 /* PokemonCollectionViewCell.swift */; };
 		645D887025B1743700926C16 /* PokemonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645D886E25B1743700926C16 /* PokemonCollectionViewCell.xib */; };
-		645D887325B19D9800926C16 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D887225B19D9800926C16 /* HTTPClient.swift */; };
+		64D8367A25B4A302002A8104 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D8367925B4A302002A8104 /* PokemonModel.swift */; };
 		7F1D54B4CCABB02425E1F865 /* Pods_KooData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F778E029053B0BB0B822A7D /* Pods_KooData.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		645D886625B1735F00926C16 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		645D886D25B1743700926C16 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
 		645D886E25B1743700926C16 /* PokemonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCollectionViewCell.xib; sourceTree = "<group>"; };
-		645D887225B19D9800926C16 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		64D8367925B4A302002A8104 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		BA047A1DEC45D0AB9C1CA8BE /* Pods-KooData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KooData.debug.xcconfig"; path = "Target Support Files/Pods-KooData/Pods-KooData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,6 @@
 				645D886225B1714B00926C16 /* Model */,
 				645D886325B1715300926C16 /* ViewModel */,
 				645D886125B1714500926C16 /* View */,
-				6419CEE625B407DD0069ED29 /* GraphQL */,
 				645D884B25B1703D00926C16 /* AppDelegate.swift */,
 				645D885425B1703F00926C16 /* Assets.xcassets */,
 				645D885625B1703F00926C16 /* LaunchScreen.storyboard */,
@@ -135,7 +134,8 @@
 		645D886225B1714B00926C16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				645D887225B19D9800926C16 /* HTTPClient.swift */,
+				6419CEE625B407DD0069ED29 /* GraphQL */,
+				64D8367925B4A302002A8104 /* PokemonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,9 +314,9 @@
 			files = (
 				645D885025B1703D00926C16 /* PokemonVC.swift in Sources */,
 				6419CF1A25B495C50069ED29 /* KingfisherWrapper.swift in Sources */,
+				64D8367A25B4A302002A8104 /* PokemonModel.swift in Sources */,
 				645D886725B1735F00926C16 /* UICollectionView+Extension.swift in Sources */,
 				6419CEEC25B415440069ED29 /* CellViewModel.swift in Sources */,
-				645D887325B19D9800926C16 /* HTTPClient.swift in Sources */,
 				6419CEE925B407F70069ED29 /* Apollo.swift in Sources */,
 				645D886F25B1743700926C16 /* PokemonCollectionViewCell.swift in Sources */,
 				6419CEE425B407A70069ED29 /* API.swift in Sources */,

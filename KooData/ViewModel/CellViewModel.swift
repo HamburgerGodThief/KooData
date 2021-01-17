@@ -9,12 +9,22 @@ import Foundation
 
 struct CellViewModel {
     
-    let numberNameText: String
+    let number: String
+    
+    let name: String
     
     let imageUrl: String
     
-    let typeText: String
-    
+    var numberNameText: String {
+        
+        get {
+            
+            number + "－" + name
+            
+        }
+        
+    }
+                
 }
 
 

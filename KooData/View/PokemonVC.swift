@@ -23,42 +23,22 @@ class PokemonVC: UIViewController {
         
     }
     
-    var pokemons: [GetPokemonsQuery.Data.Pokemon] = []
-    
-    func loadData() {
-        
-        let query = GetPokemonsQuery()
-        
-        Apollo.shared.client.fetch(query: query) { result in
+    var pokemonVCViewModel: PokemonVCViewModel = PokemonVCViewModel()
             
-            switch result {
-            
-            case .success(let graphQLResult):
-                
-                if let pokemons = graphQLResult.data?.pokemons?.compactMap({ $0 }) {
-                    
-                    self.pokemons = pokemons
-                    
-                    self.pokemonCollectionView.reloadData()
-                    
-                }
-                
-            case .failure(let error):
-                // 5
-                print("Error loading data \(error)")
-                
-            }
-            
-        }
-        
-    }
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        loadData()
-                
+        pokemonVCViewModel.loadData()
+        
+        pokemonVCViewModel.reloadCollectionViewClosure = { [weak self] in
+            
+            guard let strongSelf = self else { return }
+            
+            strongSelf.pokemonCollectionView.reloadData()
+            
+        }
+                        
     }
 
 
@@ -68,7 +48,7 @@ extension PokemonVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return pokemons.count
+        return pokemonVCViewModel.numberOfCells
         
     }
     
@@ -76,9 +56,9 @@ extension PokemonVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
                 
         guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonCollectionViewCell", for: indexPath) as? PokemonCollectionViewCell else { return UICollectionViewCell() }
         
-        item.numberNameLbl.text = "\(String(describing: pokemons[indexPath.row].number)) － \(String(describing: pokemons[indexPath.row].name))"
+        item.numberNameLbl.text = pokemonVCViewModel.cellViewModels[indexPath.row].numberNameText
         
-        item.pokemonImg.loadImage(pokemons[indexPath.row].image)
+        item.pokemonImg.loadImage(pokemonVCViewModel.cellViewModels[indexPath.row].imageUrl)
                                 
         return item
                     
