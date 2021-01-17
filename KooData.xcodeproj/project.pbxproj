@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6419CEC725B3E9B90069ED29 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6419CEC625B3E9B90069ED29 /* schema.json */; };
+		6419CECA25B3EE9E0069ED29 /* queryPokemon.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6419CEC925B3EE9E0069ED29 /* queryPokemon.graphql */; };
+		6419CEE425B407A70069ED29 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEE325B407A70069ED29 /* API.swift */; };
+		6419CEE925B407F70069ED29 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEE825B407F70069ED29 /* Apollo.swift */; };
+		6419CEEC25B415440069ED29 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEEB25B415440069ED29 /* CellViewModel.swift */; };
+		6419CEEF25B41C7E0069ED29 /* PokemonVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419CEEE25B41C7E0069ED29 /* PokemonVCViewModel.swift */; };
 		645D884C25B1703D00926C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884B25B1703D00926C16 /* AppDelegate.swift */; };
 		645D885025B1703D00926C16 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884F25B1703D00926C16 /* PokemonVC.swift */; };
 		645D885325B1703D00926C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D885125B1703D00926C16 /* Main.storyboard */; };
@@ -23,7 +27,11 @@
 /* Begin PBXFileReference section */
 		1F778E029053B0BB0B822A7D /* Pods_KooData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KooData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACF18125A2394A80163ACB /* Pods-KooData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KooData.release.xcconfig"; path = "Target Support Files/Pods-KooData/Pods-KooData.release.xcconfig"; sourceTree = "<group>"; };
-		6419CEC625B3E9B90069ED29 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		6419CEC925B3EE9E0069ED29 /* queryPokemon.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = queryPokemon.graphql; sourceTree = "<group>"; };
+		6419CEE325B407A70069ED29 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6419CEE825B407F70069ED29 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		6419CEEB25B415440069ED29 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		6419CEEE25B41C7E0069ED29 /* PokemonVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVCViewModel.swift; sourceTree = "<group>"; };
 		645D884825B1703D00926C16 /* KooData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KooData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D884B25B1703D00926C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645D884F25B1703D00926C16 /* PokemonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
@@ -67,6 +75,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6419CEE625B407DD0069ED29 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				6419CEC925B3EE9E0069ED29 /* queryPokemon.graphql */,
+				6419CEE325B407A70069ED29 /* API.swift */,
+				6419CEE825B407F70069ED29 /* Apollo.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 		645D883F25B1703C00926C16 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +110,7 @@
 				645D886225B1714B00926C16 /* Model */,
 				645D886325B1715300926C16 /* ViewModel */,
 				645D886125B1714500926C16 /* View */,
+				6419CEE625B407DD0069ED29 /* GraphQL */,
 				645D884B25B1703D00926C16 /* AppDelegate.swift */,
 				645D885425B1703F00926C16 /* Assets.xcassets */,
 				645D885625B1703F00926C16 /* LaunchScreen.storyboard */,
@@ -114,7 +133,6 @@
 		645D886225B1714B00926C16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6419CEC625B3E9B90069ED29 /* schema.json */,
 				645D887225B19D9800926C16 /* HTTPClient.swift */,
 			);
 			path = Model;
@@ -123,6 +141,8 @@
 		645D886325B1715300926C16 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6419CEEB25B415440069ED29 /* CellViewModel.swift */,
+				6419CEEE25B41C7E0069ED29 /* PokemonVCViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +163,8 @@
 			buildConfigurationList = 645D885C25B1703F00926C16 /* Build configuration list for PBXNativeTarget "KooData" */;
 			buildPhases = (
 				F3DABDB39B4D5DBA983D936D /* [CP] Check Pods Manifest.lock */,
+				6419CEE125B406B50069ED29 /* Generate Apollo schema.json */,
+				6419CECC25B3EFB00069ED29 /* Generate Apollo GraphQL API */,
 				645D884425B1703C00926C16 /* Sources */,
 				645D884525B1703C00926C16 /* Frameworks */,
 				645D884625B1703C00926C16 /* Resources */,
@@ -195,8 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				645D885825B1703F00926C16 /* LaunchScreen.storyboard in Resources */,
-				6419CEC725B3E9B90069ED29 /* schema.json in Resources */,
 				645D885525B1703F00926C16 /* Assets.xcassets in Resources */,
+				6419CECA25B3EE9E0069ED29 /* queryPokemon.graphql in Resources */,
 				645D887025B1743700926C16 /* PokemonCollectionViewCell.xib in Resources */,
 				645D885325B1703D00926C16 /* Main.storyboard in Resources */,
 			);
@@ -205,6 +227,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6419CECC25B3EFB00069ED29 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Go to the build root and search up the chain to find the \n# Derived Data Path where the source packages are checked out.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+		6419CEE125B406B50069ED29 /* Generate Apollo schema.json */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo schema.json";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=https://graphql-pokemon2.vercel.app/ schema.json\n";
+		};
 		66F1870881432C930E4E1B3F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,8 +311,12 @@
 			files = (
 				645D885025B1703D00926C16 /* PokemonVC.swift in Sources */,
 				645D886725B1735F00926C16 /* UICollectionView+Extension.swift in Sources */,
+				6419CEEC25B415440069ED29 /* CellViewModel.swift in Sources */,
 				645D887325B19D9800926C16 /* HTTPClient.swift in Sources */,
+				6419CEE925B407F70069ED29 /* Apollo.swift in Sources */,
 				645D886F25B1743700926C16 /* PokemonCollectionViewCell.swift in Sources */,
+				6419CEE425B407A70069ED29 /* API.swift in Sources */,
+				6419CEEF25B41C7E0069ED29 /* PokemonVCViewModel.swift in Sources */,
 				645D884C25B1703D00926C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

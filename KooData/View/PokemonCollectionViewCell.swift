@@ -35,7 +35,7 @@ class PokemonCollectionViewCell: UICollectionViewCell {
         
         didSet {
             
-            numberNameLbl.font = UIFont.systemFont(ofSize: 24, weight: .regular)
+            numberNameLbl.font = UIFont.systemFont(ofSize: 18, weight: .regular)
             
         }
         
@@ -45,7 +45,7 @@ class PokemonCollectionViewCell: UICollectionViewCell {
         
         didSet {
             
-            typeLbl.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+            typeLbl.font = UIFont.systemFont(ofSize: 14, weight: .regular)
             
         }
         

@@ -23,11 +23,42 @@ class PokemonVC: UIViewController {
         
     }
     
+    var pokemons: [GetPokemonsQuery.Data.Pokemon] = []
+    
+    func loadData() {
+        
+        let query = GetPokemonsQuery()
+        
+        Apollo.shared.client.fetch(query: query) { result in
+            
+            switch result {
+            
+            case .success(let graphQLResult):
+                
+                if let pokemons = graphQLResult.data?.pokemons?.compactMap({ $0 }) {
+                    
+                    self.pokemons = pokemons
+                    
+                    self.pokemonCollectionView.reloadData()
+                    
+                }
+                
+            case .failure(let error):
+                // 5
+                print("Error loading data \(error)")
+                
+            }
+            
+        }
+        
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        pokemonCollectionView.backgroundColor = .blue
-        
+        loadData()
+                
     }
 
 
@@ -37,13 +68,15 @@ extension PokemonVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 20
+        return pokemons.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
                 
         guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonCollectionViewCell", for: indexPath) as? PokemonCollectionViewCell else { return UICollectionViewCell() }
+        
+        item.numberNameLbl.text = "\(pokemons[indexPath.row].number) － \(pokemons[indexPath.row].name)"
                                 
         return item
                     
