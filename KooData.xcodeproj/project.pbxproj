@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6419CEC725B3E9B90069ED29 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6419CEC625B3E9B90069ED29 /* schema.json */; };
 		645D884C25B1703D00926C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884B25B1703D00926C16 /* AppDelegate.swift */; };
 		645D885025B1703D00926C16 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D884F25B1703D00926C16 /* PokemonVC.swift */; };
 		645D885325B1703D00926C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D885125B1703D00926C16 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		1F778E029053B0BB0B822A7D /* Pods_KooData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KooData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACF18125A2394A80163ACB /* Pods-KooData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KooData.release.xcconfig"; path = "Target Support Files/Pods-KooData/Pods-KooData.release.xcconfig"; sourceTree = "<group>"; };
+		6419CEC625B3E9B90069ED29 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		645D884825B1703D00926C16 /* KooData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KooData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D884B25B1703D00926C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645D884F25B1703D00926C16 /* PokemonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				BA047A1DEC45D0AB9C1CA8BE /* Pods-KooData.debug.xcconfig */,
 				46ACF18125A2394A80163ACB /* Pods-KooData.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +114,7 @@
 		645D886225B1714B00926C16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6419CEC625B3E9B90069ED29 /* schema.json */,
 				645D887225B19D9800926C16 /* HTTPClient.swift */,
 			);
 			path = Model;
@@ -193,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				645D885825B1703F00926C16 /* LaunchScreen.storyboard in Resources */,
+				6419CEC725B3E9B90069ED29 /* schema.json in Resources */,
 				645D885525B1703F00926C16 /* Assets.xcassets in Resources */,
 				645D887025B1743700926C16 /* PokemonCollectionViewCell.xib in Resources */,
 				645D885325B1703D00926C16 /* Main.storyboard in Resources */,
